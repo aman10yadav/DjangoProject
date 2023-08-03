@@ -1,0 +1,16 @@
+{% load static %}
+<html>
+    <head>
+        <title>Employee Information</title>
+    </head>
+    <body>
+        <h1>Employee Details !!</h1>
+        <ol type="circle">
+            <li>Id = {{id}}</li>
+            <li>Name = {{name}}</li>
+            <li>salary = {{salary}}</li>
+        </ol>
+        {% comment %} <img src="{% staticimages/img.png%}"/> {% endcomment %}
+        <img src = "{% static 'images/img.png' %}">
+    </body>
+</html>

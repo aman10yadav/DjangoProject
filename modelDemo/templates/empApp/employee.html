@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Employee Information</title>
+    </head>
+    <body>
+        <h1>Employee Details</h1>
+        {% if employees %}
+            <table bd=2>
+                <tr>
+                    <th>Employee First Name</th>
+                    <th>Employee Last Name</th>
+                    <th>Employee Salary</th>
+                    <th>Employee Email</th>
+                </tr>
+                {% for emp in employees %}
+                <tr>
+                    <td>{{emp.firstName}}</td>
+                    <td>{{emp.lastName}}</td>
+                    <td>{{emp.salary}}</td>
+                    <td>{{emp.email}}</td>
+                </tr>
+                {% endfor %}
+            </table>
+        {% else %}
+        <p>Records Not Found</p>
+        {% endif %}
+    </body>
+</html>
